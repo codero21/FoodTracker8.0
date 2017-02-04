@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RatingControl: UIStackView {
+@IBDesignable class RatingControl: UIStackView {
     
     //MARK: Properties
     
@@ -43,7 +43,7 @@ class RatingControl: UIStackView {
     
     private func setupButtons() {
         
-        for _ in 1..<5 {
+        for _ in 0..<5 {
             // Create the button
             let button = UIButton()
             
