@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: Properties
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var mealNameLabel: UILabel!
     
@@ -29,6 +30,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     //MARK: UITextFieldDelegate
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Hide the keyboard.
         textField.resignFirstResponder()
@@ -36,9 +38,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    // set text field value to meal name label
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        mealNameLabel.text = textField.text
+        textField.text = ""
+    }
+    
     
     
     //MARK: Actions
+    
     @IBAction func setDefaultLabelText(_ sender: UIButton) {
         mealNameLabel.text = "Set Default Text! ✔"
     }
