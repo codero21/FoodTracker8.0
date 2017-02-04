@@ -26,7 +26,7 @@ class ViewController: UIViewController {
 
     //MARK: Actions
     @IBAction func setDefaultLabelText(_ sender: UIButton) {
-        
+        mealNameLabel.text = "Set Default Text! ✔"
     }
     
 }
