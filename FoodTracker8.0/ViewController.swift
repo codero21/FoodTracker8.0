@@ -24,5 +24,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    //MARK: Actions
+    @IBAction func setDefaultLabelText(_ sender: UIButton) {
+        
+    }
+    
 }
 
